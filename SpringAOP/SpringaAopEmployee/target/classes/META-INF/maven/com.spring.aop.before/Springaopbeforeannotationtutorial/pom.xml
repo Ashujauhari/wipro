@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.spring.aop.before</groupId>
+	<artifactId>Springaopbeforeannotationtutorial</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>Spring Aop @Before Annotation Tutorial</name>
+	<description>A tutorial to understand the @Before annotation in Spring Aop module</description>
+
+	<!-- spring boot parent dependency jar. -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.1.RELEASE</version>
+	</parent>
+
+	<dependencies>
+		<!-- spring boot jar. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<!-- to implement aop in a spring boot application. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>Springaopbeforeannotationtutorial</finalName>
+	</build>
+</project>
