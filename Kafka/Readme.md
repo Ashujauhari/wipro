@@ -5,11 +5,17 @@
 ## Setup Kafka
 
 ### Open Source Kafka Startup in local
-#### Start Zookeeper Server 
+#### Start Zookeeper Server  in mac
 `sh bin/zookeeper-server-start.sh config/zookeeper.properties`
 
-#### Start Kafka Server / Broker
+#### Start Zookeeper Server in windows
+zookeeper-server-start.sh config/zookeeper.properties
+
+#### Start Kafka Server / Broker in mac
 `sh bin/kafka-server-start.sh config/server.properties`
+
+#### Start Kafka Server / Broker in windows
+`kafka-server-start.bat config/server.properties`
 
 #### Create topic in mac
 `sh bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic NewTopic --partitions 3 --replication-factor 1`
